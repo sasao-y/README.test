@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="test.css">
+		<script src="jquery-3.4.1.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+		<script src="bignumber.js"></script>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	</head>
+	<body>
+		<!--会社名、SS名-->
+		<div class="corpName">
+			会社名：<span class=span1></span>
+		</div>
+		<div class="ssName">
+			SS名：<span class=span2></span>
+		</div>
+
+		<!--追加、削除、全選択ボタン--> 
+		<br>
+		<div class="addButton">
+			<input type="button" value="Add" >
+		</div>
+		<div class="deleteButton">
+			<input type="button" value="Delete">
+		</div>
+		<div class="allButton">
+			<input type="button" value="All">
+		</div>
+		<br>
+		<!--表-->
+		<br>
+		<table border="1" class="table">
+			<thead class="top">
+				<tr>
+					<th class="day">開始日</th>
+					<th class="haioku">ハイオク</th>
+					<th class="regular">レギュラー</th>
+					<th class="touyu">灯油</th>
+					<th class="keiyu">軽油</th>
+					<th class="aHeavyoil">A重油</th>
+					<th class="lsaHeavyoil">LSA重油</th>
+					<th class="noDisplayTitle">固定</th>
+					<th class="deleteTitle">削除</th>
+					<th class="totalTitle">合計</th>
+				</tr>
+			</thead>
+			<tbody name="tbody">
+				<tr>
+					<td><input type="text" size="10" class="days" value="10/01"></td>
+					<td><input type="text" size="10" class="num"  value="134.70" ></td>
+					<td><input type="text" size="10" class="num" value="125.70" ></td>
+					<td><input type="text" size="10" class="num"  value="70.10" ></td>
+					<td><input type="text" size="10" class="num" value="67.90"></td>
+					<td><input type="text" size="10" class="num" value="68.10"></td>
+					<td><input type="text" size="10" class="num"  value="69.60"></td>
+					<td><input type="checkbox"  class="check" value="checked"></td>
+					<td><input type="checkbox"  class="delete"  value="checked" ></td>
+					<td class="sum">536.1</td>
+				</tr>
+
+				<tr>
+					<td><input type="text" size="10" class="days" value="10/02"></td>
+					<td><input type="text" size="10" class="num" value="134.70"></td>
+					<td><input type="text" size="10" class="num" value="126.70"></td>
+					<td><input type="text" size="10" class="num" value="70.10"></td>
+					<td><input type="text" size="10" class="num"value="67.90"></td>
+					<td><input type="text" size="10" class="num" value="68.10"></td>
+					<td><input type="text" size="10" class="num" value="69.60"></td>
+					<td><input type="checkbox" class="check" value="checked" ></td>
+					<td><input type="checkbox" class="delete"value="checked"></td>
+					<td class="sum" >537.1</td>
+				</tr>
+			
+				<tr>
+					<td><input type="text" size="10" class="days" value="10/03"></td>
+					<td><input type="text" size="10" class="num" value="134.70"></td>
+					<td><input type="text" size="10" class="num" value="126.70"></td>
+					<td><input type="text" size="10" class="num" value="70.10"></td>
+					<td><input type="text" size="10" class="num" value="73.90"></td>
+					<td><input type="text" size="10" class="num" value="68.10"></td>
+					<td><input type="text" size="10" class="num" value="69.60"></td>
+					<td><input type="checkbox" class="check"  value="checked"></td>
+					<td><input type="checkbox" class="delete"value="checked"></td>
+					<td class="sum" >543.1</td>
+				</tr>
+				<tr>
+					<td><input type="text" size="10" class="days" value="10/04"></td>
+					<td><input type="text" size="10" class="num" value="134.70"></td>
+					<td><input type="text" size="10" class="num" value="126.70"></td>
+					<td><input type="text" size="10" class="num"value="130.10"></td>
+					<td><input type="text" size="10" class="num" value="73.90"></td>
+					<td><input type="text" size="10" class="num"value="68.10"></td>
+					<td><input type="text" size="10" class="num" value="69.60"></td>
+					<td><input type="checkbox" class="check" value="checked"></td>
+					<td><input type="checkbox" class="delete" value="checked"></td>
+					<td class="sum" >603.1</td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+
+		<!--会社名選択-->
+		<div class="corp">
+			会社名
+			<select name="corpSelect">
+				<option value="アイネット石油">アイネット石油</option>
+				<option value="東京石油">東京石油</option>
+				<option value="沖縄石油">沖縄石油</option>
+			</select>
+		</div>
+
+			
+		<!--SS名選択-->
+		<div class="ss">
+			SS名
+			<select name="ssSelect">
+				<option value="東京CS">東京CS</option>
+				<option value="蒲田CS">蒲田CS</option>
+			</select>
+		</div>
+
+		<!--表示ボタン-->
+		<div class="display">
+			<input type="button" class="displayButton" value="表示" >
+		</div>
+
+		<!--終了ボタン-->
+		<div class="end">
+			<input type="button" class="endButton" value="終了" onClick="window.top.close()" >
+		</div>
+
+		<!--文字色変更-->
+		<br>
+		<div class="colorSelect">
+			<select name="color" >
+				<option class="black" value="黒">黒</option>
+				<option class="red"value="赤">赤</option>
+				<option class="blue"value="青">青</option>
+			</select>
+		</div>
+		<div class="colorChange">
+			<input type="button" class="colorChangeButton"value="文字色変更">
+		</div>
+		<br>
+		<script type="text/javascript" src="testjs.js"></script>
+	</body>
+</html>
