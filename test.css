@@ -1,0 +1,129 @@
+.corpName{
+	font-weight: bold;
+	display: inline-block;
+	width:550px;
+}
+.ssName{
+	position:fixed;
+	font-weight: bold;
+	display: inline-block;
+}
+.addButton{
+	display: inline-block;
+	margin-left:750px;
+	padding-right:15px;
+}
+.deleteButton{
+	display: inline-block;
+	padding-right:15px;
+}
+.allButton{
+	display: inline-block;
+	padding-right:15px;
+}
+.days{
+	text-align:center;
+}
+table {
+	table-layout: fixed;
+	width: 950px;
+}
+table th{
+	text-align:  center;
+	background: #EEEEEE;
+}
+table td{
+	text-align:  center;
+	background: #DDFFFF;
+	padding: 10px 0 10px 0;  
+}
+.num{
+	text-align:right;
+}
+
+.check{
+	text-align:center; 
+	vertical-align: middle;
+}
+
+.delete{
+	text-align:center; 
+	vertical-align: middle;
+}
+
+.deleteTitle{
+	text-align:center; 
+	vertical-align: middle;
+	width: 20px;
+}
+
+.noDisplayTitle{
+	text-align:center; 
+	vertical-align: middle;
+	width: 20px;
+}
+
+.total{
+	width: 90px; 
+}
+.corp{
+	float:left;
+	padding: 30px 10px; 
+	border: 1px 
+	solid #3333; 
+	background:#DDFFFF; 
+	width:300px; 
+	text-align:center;
+}
+.corpSelect{
+	display: inline-block;
+ }
+
+.ss{
+	float:left;
+	margin-left:5px;
+	padding: 30px 10px; 
+	border: 1px solid #3333;
+	background:#DDFFFF;
+	width:200px;
+	text-align:center;
+}
+
+.display{
+	display: inline-block;
+	margin-left:90px;
+	padding-right:60px;
+}
+
+input.displayButton{
+	border-color:#3cb371;
+	width:100px;
+	height:90px;
+	font-size:18pt;
+	background-color:#ffffe0;
+}
+.end{
+	display: inline-block;
+}
+input.endButton{
+	border-color:#3cb371;
+	width:100px;
+	height:90px;
+	font-size:18pt;
+	background-color:#ffffe0;
+}
+.colorSelect{
+	display: inline-block;
+	margin-left:285px;
+}
+.colorChange{
+	display: inline-block;
+}
+input.colorChangeButton{
+	text-align:center;
+	font-size:10pt;
+	width:80px;
+	height:30px;
+	background-color:#fffaf0;
+	border-color:#3cb371;
+}
